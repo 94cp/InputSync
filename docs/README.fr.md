@@ -2,7 +2,7 @@
 
 # Synchro de saisie · InputSync
 
-Synchronise la source de saisie du Mac distant avec celle du Mac local dans Partage d’écran d’Apple. **À installer uniquement sur le Mac local.** Aucune app ni configuration SSH n’est nécessaire à distance.
+Un utilitaire de barre des menus pour Mac qui synchronise la source de saisie distante avec le Mac local via Partage d’écran. **Installation locale uniquement**, sans configuration à distance.
 
 ![Démonstration InputSync — interface simulée, pas une capture vidéo](assets/inputsync-demo.gif)
 

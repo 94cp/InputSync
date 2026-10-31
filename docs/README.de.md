@@ -2,7 +2,7 @@
 
 # Eingabesync · InputSync
 
-Synchronisiert die Eingabequelle eines entfernten Macs mit dem lokalen Mac über Apples Bildschirmfreigabe. **Nur auf dem lokalen Mac installieren.** Auf dem entfernten Mac sind weder eine App noch SSH nötig.
+Eine Mac-Menüleisten-App, die bei der Bildschirmfreigabe die entfernte Eingabequelle mit dem lokalen Mac synchronisiert. **Nur lokal installieren**; keine Einrichtung am entfernten Mac nötig.
 
 ![InputSync-Demo – simulierte Oberfläche, keine Bildschirmaufnahme](assets/inputsync-demo.gif)
 

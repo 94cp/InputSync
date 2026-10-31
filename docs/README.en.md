@@ -2,7 +2,7 @@
 
 # InputSync
 
-Keep the remote Mac’s input source in sync with your local Mac in Apple Screen Sharing. Install on the **local Mac only**; no remote app or SSH setup is needed.
+A Mac menu bar app that syncs the remote input source with your local Mac in Screen Sharing. **Install locally only**; no remote setup needed.
 
 ![InputSync demonstration — simulated interface, not a screen recording](assets/inputsync-demo.gif)
 
