@@ -1,77 +1,77 @@
-[English](README.md) · [简体中文](docs/README.zh-Hans.md) · [繁體中文](docs/README.zh-Hant.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Español](docs/README.es.md)
+[简体中文](README.md) · [English](docs/README.en.md) · [繁體中文](docs/README.zh-Hant.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [Deutsch](docs/README.de.md) · [Français](docs/README.fr.md) · [Español](docs/README.es.md)
 
-# InputSync
+# 输入法同步 · InputSync
 
-Keep the remote Mac’s input source in sync with your local Mac in Apple Screen Sharing. Install on the **local Mac only**; no remote app or SSH setup is needed.
+让屏幕共享中的远端输入法跟随本机。**只需在本机安装**，远端无需安装软件或配置 SSH。
 
-![InputSync demonstration — simulated interface, not a screen recording](docs/assets/inputsync-demo.gif)
+![InputSync 效果演示：虚拟界面，非实机录屏](docs/assets/inputsync-demo.gif)
 
-## Get started
+## 开始使用
 
-1. Download the latest `.dmg` from this project’s [GitHub Releases](https://github.com/94cp/InputSync/releases/latest). Open it, drag **InputSync** into **Applications**, then open the app from Applications. No Xcode or compilation is needed.
-2. Grant the app access through its permission-settings action. Depending on macOS, the permission is called **Accessibility** or **Device Control and Data Access**.
-3. Connect to the remote Mac using Apple Screen Sharing.
-4. In InputSync, enable keyboard language sync. You can also enable it in Screen Sharing’s **Edit → Sync Keyboard Language** menu on the local Mac.
-5. Enable sync in InputSync. Switch your local input source as usual, wait about a second, then type remotely.
+1. 在本项目的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下载最新版 `.dmg`，打开后将 **InputSync** 拖入 **Applications（应用程序）**，再从“应用程序”打开。无需安装 Xcode 或自行编译。
+2. 点击应用的权限设置入口并授权。不同 macOS 版本可能称为“辅助功能”或“设备控制和数据访问”。
+3. 用 macOS 自带“屏幕共享”连接远端 Mac。
+4. 在本工具中点击“开启同步键盘语言”；也可在本机屏幕共享的“编辑 → 同步键盘语言”中开启。
+5. 点击“开启同步”。照常切换本机输入法，等约 1 秒再在远端输入。
 
-Each launch starts paused, including launches at login. A remote menu may briefly appear during synchronization.
+每次启动默认暂停，登录启动也一样。同步时远端菜单可能短暂闪现。
 
-### First launch: macOS blocks the app
+### 首次打开：提示无法验证应用
 
-This build is not signed with an Apple Developer ID or notarized. macOS may say it cannot verify the developer or check the app for malicious software.
+当前版本未使用 Apple Developer ID 签名和公证，macOS 可能提示“无法验证开发者”或“Apple 无法检查其是否包含恶意软件”。
 
-If you downloaded it from this project’s [GitHub Releases](https://github.com/94cp/InputSync/releases/latest):
+如果你是从本项目的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下载的，请按以下步骤打开：
 
-1. Open InputSync from **Applications** once. If blocked, dismiss the alert without moving the app to Trash.
-2. Open **System Settings → Privacy & Security**, then scroll to **Security**.
-3. Find the message about InputSync and click **Open Anyway**.
-4. Authenticate with your Mac login password or Touch ID if prompted, then click **Open** in the confirmation dialog.
+1. 在“应用程序”中打开一次 InputSync。出现拦截提示时关闭提示，不要选择“移到废纸篓”。
+2. 打开 **系统设置 → 隐私与安全性**，向下找到 **安全性**。
+3. 找到有关 InputSync 的拦截提示，点击 **仍要打开**。
+4. 按提示输入 Mac 登录密码或使用 Touch ID，再在确认窗口中点击 **打开**。
 
-If **Open Anyway** is missing, try opening the app again, then return to Settings. Once launched, look for InputSync in the menu bar; it does not open a main window. Next, grant the app its requested Accessibility permission—allowing it to open does not grant that permission.
+找不到“仍要打开”时，先重新打开一次应用，再回到设置查看。成功打开后，工具会出现在屏幕顶部菜单栏，不会弹出主窗口。接着按应用提示授予辅助功能权限；允许打开应用和辅助功能授权是两步操作。
 
-## How it works
+## 工作原理
 
-Apple Screen Sharing’s keyboard-language sync can update the remote input-source indicator while the active app still uses the previous input mode. In our tests, briefly opening and closing a remote menu made the change take effect. InputSync automates that workaround.
+屏幕共享的“同步键盘语言”有时只更新远端输入法指示，当前应用仍使用旧的输入状态。实验中，短暂打开再关闭远端菜单后，切换才实际生效。InputSync 将这个操作自动化。
 
-1. Observe macOS notifications when the local input source changes, regardless of the key or shortcut used.
-2. Wait for the configured delay (0.5 seconds by default), allowing Screen Sharing to synchronize the language.
-3. Locate the shared screen in the active window through Accessibility, click near the remote menu bar’s upper-left corner, then send Escape to close the menu.
+1. 监听 macOS 的本机输入源变化通知，不依赖某个固定按键或快捷键。
+2. 等待设定的延迟（默认 0.5 秒），让屏幕共享先同步键盘语言。
+3. 通过辅助功能获取当前窗口中的共享画面位置，点击远端菜单栏左上方，再发送 Escape 关闭菜单。
 
-This is an experimentally verified UI workaround, not a remote input-method API. It relies on the remote menu bar being reachable at the expected location. A brief menu flash is part of the mechanism.
+这是经实验验证的界面刷新方法，不是直接调用远端输入法接口。它依赖远端菜单栏位于可点击的预期位置，因此同步时可能看到菜单短暂闪现。
 
-Resizing or moving the window is supported. If it changes during a pending refresh, that refresh is skipped; switch input sources again after adjusting it. Full-screen and scaling combinations have not all been tested.
+可以调整窗口大小和位置。若在等待刷新时调整，本次会跳过；调整后再次切换输入法即可。全屏及各种缩放组合尚未全部验证。
 
-## Menu bar symbol and language
+## 状态栏与语言
 
-Under **More**, choose the menu bar symbol. **Automatic** uses recognizable keyboard layout information, then the macOS region:
+在“更多 → 状态栏标识”中选择。默认“自动”：优先使用可识别的键盘布局，否则按系统地区推荐。
 
-- China mainland, Taiwan, Hong Kong, Macao: **中/英**
-- Japan: **英数 / かな**
-- South Korea: **한/영**
-- Other regions: globe
+- 中国大陆、台湾、香港、澳门：**中/英**
+- 日本：**英数 / かな**
+- 韩国：**한/영**
+- 其他地区：地球图标
 
-This is a suggested display, not a reliable reading of keycap labels. Manual choices take priority. The symbol does not remap keys or change input sources.
+这是显示建议，不代表准确识别键帽。手动选择优先；标识不会修改快捷键或输入法。
 
-The interface follows the app language configured in macOS Language & Region settings. Eight languages are included; others fall back to English.
+界面跟随 macOS“语言与地区”中的应用语言设置。支持八种语言，其他语言回退到英文。
 
-## Troubleshooting
+## 常见问题
 
-- **Permission is enabled but unavailable:** toggle this app’s permission off and on, then restart it. Updates may require authorization again.
-- **No synchronization:** enable sync in both apps, keep the remote window active, and try a longer delay from the menu.
-- **Logs:** open them from the More menu.
+- **已授权但仍不可用：**关闭再开启本应用的权限，然后重启应用。更新后可能需要重新授权。
+- **未同步：**确认两个应用中的同步选项均已开启，保持远端窗口处于活动状态，或在菜单中增加延迟。
+- **查看日志：**打开“更多 → 查看日志”。
 
-The workaround has been verified with ABC and system Simplified Pinyin on macOS 27.2. Other input methods and older macOS versions have not been fully tested. It targets Apple Screen Sharing, without a fixed Mac model or window size requirement.
+已在 macOS 27.2 上验证 ABC 和系统简体拼音。其他输入法及较旧系统尚未完整测试。仅面向 macOS 自带屏幕共享，不限制 Mac 型号或固定窗口大小。
 
-## Uninstall
+## 卸载
 
-Disable Launch at Login, quit InputSync, and delete the app. Optionally delete the log: `~/Library/Logs/InputSync/events.log`.
+关闭“登录时启动”，退出并删除应用。日志可按需删除：`~/Library/Logs/InputSync/events.log`。
 
-## Support development
+## 支持开发
 
-If InputSync helps you, buy me a coffee. A Star on GitHub is also appreciated!
+如果 InputSync 对你有帮助，可以请我喝杯咖啡，也欢迎在 GitHub 点个 Star！
 
-| WeChat Pay | Alipay |
+| 微信支付 | 支付宝 |
 | :---: | :---: |
-| <img src="docs/assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="docs/assets/donate/alipay.png" alt="Alipay" width="180"> |
+| <img src="docs/assets/donate/wechat.png" alt="微信支付" width="180"> | <img src="docs/assets/donate/alipay.png" alt="支付宝" width="180"> |
 
-[Development](docs/DEVELOPMENT.md)
+[开发说明](docs/DEVELOPMENT.md)
