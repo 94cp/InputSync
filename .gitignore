@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+._*
+
+# Build output and release packages
+/build/
+/build-*/
+/dist/
+DerivedData/
+*.xcarchive
+*.xcresult
+*.dSYM/
+
+# Local experiments and rollback copies
+/Verification/
+/tmp/
+
+# Xcode user settings (keep shared schemes and project files)
+xcuserdata/
+*.xcuserstate
+
+# Logs and editor temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+__pycache__/
+*.py[cod]
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile

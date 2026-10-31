@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -eu
+cd "${0:A:h:h}"
+export DEVELOPER_DIR="${DEVELOPER_DIR:-/Applications/Xcode.app/Contents/Developer}"
+xcodebuild -project InputSync.xcodeproj -scheme InputSync -configuration Debug -derivedDataPath build-tests -destination 'platform=macOS' test "$@"
