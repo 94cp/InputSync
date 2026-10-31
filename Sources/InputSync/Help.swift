@@ -11,6 +11,7 @@ extension AppDelegate {
     }
     @objc func about() {
         showInformation(L("menu.about"), sections: [
+            (L("about.version"), Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "—"),
             (L("about.purpose.heading"), L("about.purpose.body")),
             (L("about.window.heading"), L("about.window.body")),
             (L("about.behavior.heading"), L("about.behavior.body")),
