@@ -29,6 +29,10 @@ Wenn du die App aus den [GitHub Releases](https://github.com/94cp/InputSync/rele
 
 Fehlt die Schaltfläche, die App erneut öffnen und zu den Einstellungen zurückkehren. Nach dem Start erscheint InputSync in der Menüleiste, ohne Hauptfenster. Danach die angeforderte Berechtigung für Bedienungshilfen erteilen; sie ist von der Erlaubnis zum Öffnen getrennt.
 
+## Updates
+
+Im Menü **Nach Updates suchen…** wählen. Automatische Prüfungen lassen sich unter **Mehr** umschalten. Nach Bestätigung wird das Update heruntergeladen, installiert und die App neu gestartet. Version 0.7.0 muss einmal manuell aktualisiert werden.
+
 ## Funktionsweise
 
 Die Tastatursprachensynchronisierung der Bildschirmfreigabe aktualisiert manchmal nur die Anzeige auf dem entfernten Mac, während die aktive App den bisherigen Eingabemodus behält. In unseren Tests wurde der Wechsel durch kurzes Öffnen und Schließen eines entfernten Menüs wirksam. InputSync automatisiert diesen Ablauf.

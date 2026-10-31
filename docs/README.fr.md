@@ -29,6 +29,10 @@ Si vous l’avez téléchargée depuis les [GitHub Releases](https://github.com/
 
 Si le bouton manque, essayez à nouveau d’ouvrir l’app, puis revenez aux réglages. InputSync apparaît ensuite dans la barre des menus, sans fenêtre principale. Accordez alors l’autorisation d’accessibilité demandée par l’app : elle est distincte de l’autorisation d’ouverture.
 
+## Mises à jour
+
+Choisissez **Rechercher des mises à jour…** dans le menu. La recherche automatique se règle sous **Plus**. Après confirmation, la mise à jour est téléchargée et installée, puis l’app redémarre. La version 0.7.0 nécessite une première mise à jour manuelle.
+
 ## Fonctionnement
 
 La synchronisation de la langue du clavier peut modifier l’indicateur distant sans appliquer le changement à l’app active. Lors de nos essais, ouvrir puis fermer brièvement un menu distant rendait le changement effectif. InputSync automatise cette manipulation.

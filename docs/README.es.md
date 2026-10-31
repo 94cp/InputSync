@@ -29,6 +29,10 @@ Si la descargaste de [GitHub Releases](https://github.com/94cp/InputSync/release
 
 Si falta el botón, intenta abrir la app otra vez y vuelve a Ajustes. Al iniciarse, InputSync aparece en la barra de menús, sin ventana principal. A continuación, concede el permiso de Accesibilidad solicitado por la app: es independiente del permiso para abrirla.
 
+## Actualizaciones
+
+Elige **Buscar actualizaciones…** en el menú. Activa o desactiva la búsqueda automática en **Más**. Al confirmar, se descarga e instala la actualización y se reinicia la app. La versión 0.7.0 requiere una primera actualización manual.
+
 ## Cómo funciona
 
 La sincronización del idioma del teclado puede actualizar el indicador remoto sin aplicar el cambio a la app activa. En nuestras pruebas, abrir y cerrar brevemente un menú remoto hizo efectivo el cambio. InputSync automatiza esa operación.

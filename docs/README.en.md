@@ -29,6 +29,10 @@ If you downloaded it from this project’s [GitHub Releases](https://github.com/
 
 If **Open Anyway** is missing, try opening the app again, then return to Settings. Once launched, look for InputSync in the menu bar; it does not open a main window. Next, grant the app its requested Accessibility permission—allowing it to open does not grant that permission.
 
+## Updates
+
+Choose **Check for Updates…** from the menu. Toggle automatic checks under **More**. Confirm an update to download, install and restart. Version 0.7.0 needs one manual upgrade.
+
 ## How it works
 
 Apple Screen Sharing’s keyboard-language sync can update the remote input-source indicator while the active app still uses the previous input mode. In our tests, briefly opening and closing a remote menu made the change take effect. InputSync automates that workaround.

@@ -23,4 +23,14 @@ ln -s /Applications "$package_tmp/dmg/Applications"
 /usr/bin/hdiutil verify "$package_tmp/$dmg_name"
 mv "$package_tmp/$dmg_name" "$output_dir/$dmg_name"
 (cd "$output_dir" && /usr/bin/shasum -a 256 "$dmg_name" > "$dmg_name.sha256")
+# Sparkle reads a signed feed from the latest GitHub Release.
+mkdir -p "$package_tmp/updates"
+ln "$output_dir/$dmg_name" "$package_tmp/updates/$dmg_name"
+"build/SourcePackages/artifacts/sparkle/Sparkle/bin/generate_appcast" \
+    --account com.cp.inputsync --maximum-deltas 0 \
+    --download-url-prefix "https://github.com/94cp/InputSync/releases/download/v${version}/" \
+    --link "https://github.com/94cp/InputSync" \
+    "$package_tmp/updates"
+cp "$package_tmp/updates/appcast.xml" "$output_dir/appcast.xml"
 print "Package: $output_dir/$dmg_name"
+print "Update feed: $output_dir/appcast.xml"

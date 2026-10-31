@@ -2,8 +2,11 @@ import AppKit
 import ApplicationServices
 import Carbon
 import ServiceManagement
+import Sparkle
 
 final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
+    lazy var updaterController = SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: nil, userDriverDelegate: nil)
+    var automaticUpdatesItem: NSMenuItem!
     var item: NSStatusItem!
     var toggleItem: NSMenuItem!
     var header: MenuHeader!
@@ -51,7 +54,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         keyboardSyncItem = add(L("setup.menu"), #selector(enableKeyboardSync), to: menu)
         keyboardSyncItem.image = symbol("keyboard")
         add(L("menu.help"), #selector(help), to: menu).image = symbol("questionmark.circle")
+        let checkUpdates = add(L("update.check"), #selector(SPUStandardUpdaterController.checkForUpdates(_:)), to: menu)
+        checkUpdates.target = updaterController
+        checkUpdates.image = symbol("arrow.down.circle")
         let details = NSMenu()
+        automaticUpdatesItem = add(L("update.automatic"), #selector(toggleAutomaticUpdates), to: details)
         addStatusLabelMenu(to: details)
         details.addItem(.separator())
         add(L("menu.about", AppIdentity.name), #selector(about), to: details)
@@ -63,6 +70,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(.separator())
         add(L("menu.quit", AppIdentity.name), #selector(quit), to: menu).image = symbol("power")
         item.menu = menu
+        updaterController.startUpdater()
         refreshPermissions()
         updateLoginItem()
         update()
@@ -106,7 +114,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             log("PAUSE permission unavailable")
         }
     }
+    @objc func toggleAutomaticUpdates() {
+        updaterController.updater.automaticallyChecksForUpdates.toggle()
+    }
     func menuNeedsUpdate(_ menu: NSMenu) {
+        automaticUpdatesItem.state = updaterController.updater.automaticallyChecksForUpdates ? .on : .off
         refreshPermissions()
         keyboardSyncItem.state = keyboardSyncMenuItem().map { syncMarked($0) ? .on : .off } ?? .off
         updateLoginItem()
