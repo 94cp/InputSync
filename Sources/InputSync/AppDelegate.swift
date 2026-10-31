@@ -9,6 +9,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     var automaticUpdatesItem: NSMenuItem!
     var item: NSStatusItem!
     var toggleItem: NSMenuItem!
+    var restartItem: NSMenuItem!
     var header: MenuHeader!
     var delayItem: NSMenuItem!
     var keyboardSyncItem: NSMenuItem!
@@ -38,6 +39,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(heading)
         menu.addItem(.separator())
         toggleItem = add(L("menu.enable"), #selector(toggle), to: menu)
+        restartItem = add(L("menu.restart"), #selector(restart), to: menu)
         let details = NSMenu()
         details.delegate = self
         let delays = NSMenu()
@@ -137,6 +139,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         item.button?.setAccessibilityLabel(description)
         toggleItem.title = enabled ? L("menu.pause") : permissions.ready ? L("menu.enable") : permissions.accessibility ? L("permission.check.menu") : L("permission.open.menu")
         toggleItem.image = symbol(enabled ? "pause" : needsPermission ? "lock.open" : "play")
+        restartItem.isHidden = permissions.ready
         delayItem.title = L("delay.menu", L10n.number(delay))
         header.configure(enabled: enabled, permission: permissions, detail: setupMessage ?? (enabled ? lastStatus : L("state.intro")))
     }
@@ -189,6 +192,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         for option in sender.menu?.items ?? [] { option.state = option === sender ? .on : .off }
         log("DELAY \(delay)")
         update()
+    }
+    @objc func restart() {
+        restartItem.isEnabled = false
+        let configuration = NSWorkspace.OpenConfiguration()
+        configuration.createsNewApplicationInstance = true
+        NSWorkspace.shared.openApplication(at: Bundle.main.bundleURL, configuration: configuration) { [weak self] _, error in
+            DispatchQueue.main.async {
+                if let error {
+                    self?.restartItem.isEnabled = true
+                    NSApp.presentError(error)
+                } else {
+                    self?.quit()
+                }
+            }
+        }
     }
     @objc func showLog() { NSWorkspace.shared.open(logURL) }
     @objc func quit() { enabled = false; generation += 1; log("QUIT paused"); NSApp.terminate(nil) }

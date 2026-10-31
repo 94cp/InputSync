@@ -166,49 +166,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allow this version of the app in System Settings."
+            "value": "Allow access in System Settings. Already allowed? Restart the app."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "请在系统设置中允许当前版本。"
+            "value": "请在系统设置中授权；若已开启，请重新启动应用。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "請在系統設定中允許目前版本。"
+            "value": "請在系統設定中授權；若已開啟，請重新啟動應用程式。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "システム設定で現在のバージョンを許可してください。"
+            "value": "システム設定で許可してください。許可済みの場合はアプリを再起動してください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "시스템 설정에서 현재 버전의 앱을 허용하세요."
+            "value": "시스템 설정에서 권한을 허용하세요. 이미 허용했다면 앱을 다시 시작하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Erlaube diese App-Version in den Systemeinstellungen."
+            "value": "Zugriff in den Systemeinstellungen erlauben. Bereits erlaubt? App neu starten."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Autorisez cette version dans Réglages Système."
+            "value": "Autorisez l’accès dans Réglages Système. Déjà autorisé ? Redémarrez l’app."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Autoriza esta versión en Ajustes del Sistema."
+            "value": "Permite el acceso en Ajustes del Sistema. Si ya lo permitiste, reinicia la app."
           }
         }
       }
@@ -1809,49 +1809,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose Enable Sync from the menu."
+            "value": "Return to the menu and enable sync. If permission is still unavailable, choose Restart."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "回到菜单，点击“开启同步”。"
+            "value": "回到菜单，点击“开启同步”。若权限仍未生效，点击“重新启动”。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "回到選單，點擊「開啟同步」。"
+            "value": "回到選單，點擊「開啟同步」。若權限仍未生效，點擊「重新啟動」。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "メニューで同期を有効にしてください。"
+            "value": "メニューに戻り、同期を有効にします。権限が反映されない場合は「再起動」を選んでください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "메뉴에서 동기화를 켜세요."
+            "value": "메뉴로 돌아와 동기화를 켜세요. 권한이 적용되지 않았다면 “다시 시작”을 선택하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Im Menü die Synchronisierung aktivieren."
+            "value": "Im Menü die Synchronisierung aktivieren. Falls die Berechtigung noch nicht wirksam ist, „Neu starten“ wählen."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Activez la synchronisation dans le menu."
+            "value": "Revenez au menu et activez la synchronisation. Si l’autorisation reste indisponible, choisissez « Redémarrer »."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Activa la sincronización en el menú."
+            "value": "Vuelve al menú y activa la sincronización. Si el permiso sigue sin aplicarse, elige «Reiniciar»."
           }
         }
       }
@@ -4184,6 +4184,59 @@
           "stringUnit": {
             "state": "translated",
             "value": "Versión"
+          }
+        }
+      }
+    },
+    "menu.restart": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新启动"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新啟動"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再起動"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 시작"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neu starten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redémarrer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reiniciar"
           }
         }
       }
