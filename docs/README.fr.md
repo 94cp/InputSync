@@ -8,7 +8,7 @@ Synchronise la source de saisie du Mac distant avec celle du Mac local dans Part
 
 ## Démarrage
 
-1. Téléchargez le dernier fichier `.dmg` depuis les GitHub Releases du projet. Ouvrez-le, glissez **InputSync** dans **Applications**, puis lancez l’app depuis ce dossier. Xcode et la compilation ne sont pas nécessaires.
+1. Téléchargez le dernier fichier `.dmg` depuis les [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) du projet. Ouvrez-le, glissez **InputSync** dans **Applications**, puis lancez l’app depuis ce dossier. Xcode et la compilation ne sont pas nécessaires.
 2. Autorisez l’accès depuis l’entrée des permissions de l’app. Selon macOS, la rubrique correspond à Accessibilité ou au contrôle de l’appareil et à l’accès aux données.
 3. Connectez-vous au Mac distant avec Partage d’écran d’Apple.
 4. Activez la synchronisation de la langue du clavier dans InputSync, ou dans le menu Édition de Partage d’écran sur le Mac local.
@@ -20,7 +20,7 @@ L’app démarre toujours en pause, même à la connexion. Un menu distant peut 
 
 Cette version n’est ni signée avec un identifiant Apple Developer ID ni notariée. macOS peut indiquer qu’il ne peut pas vérifier le développeur ou rechercher des logiciels malveillants.
 
-Si vous l’avez téléchargée depuis les GitHub Releases de ce projet :
+Si vous l’avez téléchargée depuis les [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) de ce projet :
 
 1. Ouvrez InputSync une fois depuis **Applications**. Si elle est bloquée, fermez l’alerte sans placer l’app dans la corbeille.
 2. Ouvrez **Réglages Système → Confidentialité et sécurité**, puis descendez jusqu’à **Sécurité**.

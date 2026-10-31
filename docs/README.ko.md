@@ -8,7 +8,7 @@ macOS 화면 공유에서 원격 Mac의 입력 소스를 로컬 Mac과 맞춥니
 
 ## 시작하기
 
-1. 이 프로젝트의 GitHub Releases에서 최신 `.dmg`를 다운로드해 여세요. **InputSync**를 **Applications(응용 프로그램)**로 드래그한 뒤 응용 프로그램 폴더에서 실행하세요. Xcode 설치나 직접 빌드는 필요 없습니다.
+1. 이 프로젝트의 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest)에서 최신 `.dmg`를 다운로드해 여세요. **InputSync**를 **Applications(응용 프로그램)**로 드래그한 뒤 응용 프로그램 폴더에서 실행하세요. Xcode 설치나 직접 빌드는 필요 없습니다.
 2. 앱의 권한 설정에서 접근을 허용하세요. macOS 버전에 따라 손쉬운 사용 또는 기기 제어 및 데이터 접근에 해당하는 항목입니다.
 3. macOS 기본 화면 공유로 원격 Mac에 연결하세요.
 4. InputSync에서 키보드 언어 동기화를 켜세요. 로컬 화면 공유의 편집 메뉴에서도 설정할 수 있습니다.
@@ -20,7 +20,7 @@ macOS 화면 공유에서 원격 Mac의 입력 소스를 로컬 Mac과 맞춥니
 
 현재 버전은 Apple Developer ID 서명 및 공증을 받지 않아 개발자나 악성 소프트웨어 여부를 확인할 수 없다는 메시지가 표시될 수 있습니다.
 
-이 프로젝트의 GitHub Releases에서 다운로드했다면 다음 순서로 여세요.
+이 프로젝트의 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest)에서 다운로드했다면 다음 순서로 여세요.
 
 1. 응용 프로그램 폴더에서 InputSync를 한 번 실행하세요. 차단되면 휴지통으로 이동하지 말고 알림을 닫으세요.
 2. **시스템 설정 → 개인정보 보호 및 보안**에서 **보안** 항목까지 내려가세요.

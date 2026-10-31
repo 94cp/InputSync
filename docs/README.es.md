@@ -8,7 +8,7 @@ Sincroniza la fuente de entrada del Mac remoto con la del Mac local mediante Com
 
 ## Primeros pasos
 
-1. Descarga el archivo `.dmg` más reciente de GitHub Releases del proyecto. Ábrelo, arrastra **InputSync** a **Applications (Aplicaciones)** y abre la app desde esa carpeta. No necesitas Xcode ni compilar el proyecto.
+1. Descarga el archivo `.dmg` más reciente de [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) del proyecto. Ábrelo, arrastra **InputSync** a **Applications (Aplicaciones)** y abre la app desde esa carpeta. No necesitas Xcode ni compilar el proyecto.
 2. Permite el acceso desde la opción de permisos de la app. Según macOS, la categoría corresponde a Accesibilidad o al control del dispositivo y acceso a los datos.
 3. Conecta con el Mac remoto mediante Compartir Pantalla de Apple.
 4. Activa la sincronización del idioma del teclado en InputSync. También puedes hacerlo en el menú Edición de Compartir Pantalla en el Mac local.
@@ -20,7 +20,7 @@ La app siempre se abre en pausa, incluso al iniciar sesión. Durante la sincroni
 
 Esta versión no tiene firma de Apple Developer ID ni notarización. macOS puede indicar que no puede verificar al desarrollador o comprobar si la app contiene software malicioso.
 
-Si la descargaste de GitHub Releases de este proyecto:
+Si la descargaste de [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) de este proyecto:
 
 1. Abre InputSync una vez desde **Aplicaciones**. Si se bloquea, cierra el aviso sin enviar la app a la papelera.
 2. Abre **Ajustes del Sistema → Privacidad y seguridad** y baja hasta **Seguridad**.

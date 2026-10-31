@@ -8,7 +8,7 @@
 
 ## 开始使用
 
-1. 在本项目的 GitHub Releases 下载最新版 `.dmg`，打开后将 **InputSync** 拖入 **Applications（应用程序）**，再从“应用程序”打开。无需安装 Xcode 或自行编译。
+1. 在本项目的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下载最新版 `.dmg`，打开后将 **InputSync** 拖入 **Applications（应用程序）**，再从“应用程序”打开。无需安装 Xcode 或自行编译。
 2. 点击应用的权限设置入口并授权。不同 macOS 版本可能称为“辅助功能”或“设备控制和数据访问”。
 3. 用 macOS 自带“屏幕共享”连接远端 Mac。
 4. 在本工具中点击“开启同步键盘语言”；也可在本机屏幕共享的“编辑 → 同步键盘语言”中开启。
@@ -20,7 +20,7 @@
 
 当前版本未使用 Apple Developer ID 签名和公证，macOS 可能提示“无法验证开发者”或“Apple 无法检查其是否包含恶意软件”。
 
-如果你是从本项目的 GitHub Releases 下载的，请按以下步骤打开：
+如果你是从本项目的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下载的，请按以下步骤打开：
 
 1. 在“应用程序”中打开一次 InputSync。出现拦截提示时关闭提示，不要选择“移到废纸篓”。
 2. 打开 **系统设置 → 隐私与安全性**，向下找到 **安全性**。

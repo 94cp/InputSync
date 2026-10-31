@@ -8,7 +8,7 @@ Synchronisiert die Eingabequelle eines entfernten Macs mit dem lokalen Mac über
 
 ## Einstieg
 
-1. Die neueste `.dmg` aus den GitHub Releases dieses Projekts herunterladen und öffnen. **InputSync** nach **Applications (Programme)** ziehen und anschließend von dort starten. Xcode und eigenes Kompilieren sind nicht nötig.
+1. Die neueste `.dmg` aus den [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) dieses Projekts herunterladen und öffnen. **InputSync** nach **Applications (Programme)** ziehen und anschließend von dort starten. Xcode und eigenes Kompilieren sind nicht nötig.
 2. Über den Berechtigungseintrag der App den Zugriff erlauben. Je nach macOS heißt die Kategorie Bedienungshilfen oder sinngemäß Gerätesteuerung und Datenzugriff.
 3. Mit Apples Bildschirmfreigabe zum entfernten Mac verbinden.
 4. Die Synchronisierung der Tastatursprache in InputSync aktivieren. Dies geht auch im Menü „Bearbeiten“ der lokalen Bildschirmfreigabe.
@@ -20,7 +20,7 @@ Die App startet immer pausiert, auch bei der Anmeldung. Während der Synchronisi
 
 Diese Version ist nicht mit einer Apple Developer ID signiert und nicht notarisiert. macOS meldet möglicherweise, dass der Entwickler oder die App nicht auf Schadsoftware überprüft werden kann.
 
-Wenn du die App aus den GitHub Releases dieses Projekts geladen hast:
+Wenn du die App aus den [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) dieses Projekts geladen hast:
 
 1. InputSync einmal aus **Programme** öffnen. Bei einer Blockierung die Meldung schließen, ohne die App in den Papierkorb zu legen.
 2. **Systemeinstellungen → Datenschutz & Sicherheit** öffnen und zu **Sicherheit** scrollen.

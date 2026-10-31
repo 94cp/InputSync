@@ -8,7 +8,7 @@
 
 ## 開始使用
 
-1. 在本專案的 GitHub Releases 下載最新版 `.dmg`，開啟後將 **InputSync** 拖入 **Applications（應用程式）**，再從「應用程式」開啟。不需安裝 Xcode 或自行編譯。
+1. 在本專案的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下載最新版 `.dmg`，開啟後將 **InputSync** 拖入 **Applications（應用程式）**，再從「應用程式」開啟。不需安裝 Xcode 或自行編譯。
 2. 透過應用程式的權限設定入口授權。依 macOS 版本，項目可能稱為「輔助使用」或裝置控制與資料存取。
 3. 使用 macOS 內建「螢幕共享」連線至遠端 Mac。
 4. 在本工具開啟鍵盤語言同步；也可在本機螢幕共享的「編輯」選單中開啟。
@@ -20,7 +20,7 @@
 
 目前版本未使用 Apple Developer ID 簽章及公證，macOS 可能提示無法驗證開發者，或無法檢查是否包含惡意軟體。
 
-若你是從本專案的 GitHub Releases 下載，請依序操作：
+若你是從本專案的 [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) 下載，請依序操作：
 
 1. 從「應用程式」開啟一次 InputSync。遭阻擋時關閉提示，不要移至垃圾桶。
 2. 開啟 **系統設定 → 隱私權與安全性**，向下找到 **安全性**。

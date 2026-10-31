@@ -8,7 +8,7 @@ Keep the remote Mac’s input source in sync with your local Mac in Apple Screen
 
 ## Get started
 
-1. Download the latest `.dmg` from this project’s GitHub Releases. Open it, drag **InputSync** into **Applications**, then open the app from Applications. No Xcode or compilation is needed.
+1. Download the latest `.dmg` from this project’s [GitHub Releases](https://github.com/94cp/InputSync/releases/latest). Open it, drag **InputSync** into **Applications**, then open the app from Applications. No Xcode or compilation is needed.
 2. Grant the app access through its permission-settings action. Depending on macOS, the permission is called **Accessibility** or **Device Control and Data Access**.
 3. Connect to the remote Mac using Apple Screen Sharing.
 4. In InputSync, enable keyboard language sync. You can also enable it in Screen Sharing’s **Edit → Sync Keyboard Language** menu on the local Mac.
@@ -20,7 +20,7 @@ Each launch starts paused, including launches at login. A remote menu may briefl
 
 This build is not signed with an Apple Developer ID or notarized. macOS may say it cannot verify the developer or check the app for malicious software.
 
-If you downloaded it from this project’s GitHub Releases:
+If you downloaded it from this project’s [GitHub Releases](https://github.com/94cp/InputSync/releases/latest):
 
 1. Open InputSync from **Applications** once. If blocked, dismiss the alert without moving the app to Trash.
 2. Open **System Settings → Privacy & Security**, then scroll to **Security**.
