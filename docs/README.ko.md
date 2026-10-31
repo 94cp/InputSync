@@ -4,7 +4,7 @@
 
 화면 공유에서 원격 입력 소스를 로컬 Mac과 동기화하는 Mac 메뉴 막대 도구입니다. **로컬 Mac에만 설치**하면 되며, 원격 설정은 필요 없습니다.
 
-![InputSync 동작 예시 — 가상 화면이며 실제 녹화가 아닙니다](assets/inputsync-demo.gif)
+![InputSync 실제 화면 데모: 로컬에서 전환하고 원격에서 입력](assets/inputsync-demo.gif)
 
 ## 시작하기
 

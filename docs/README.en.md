@@ -4,7 +4,7 @@
 
 A Mac menu bar app that syncs the remote input source with your local Mac in Screen Sharing. **Install locally only**; no remote setup needed.
 
-![InputSync demonstration — simulated interface, not a screen recording](assets/inputsync-demo.gif)
+![InputSync demo from real screenshots: switch locally, type remotely](assets/inputsync-demo.gif)
 
 ## Get started
 

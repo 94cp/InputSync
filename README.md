@@ -4,7 +4,7 @@
 
 一款 Mac 菜单栏工具，让「屏幕共享」中的远端输入法跟随本机。**仅需本机安装**，远端无需配置。
 
-![InputSync 效果演示：虚拟界面，非实机录屏](docs/assets/inputsync-demo.gif)
+![InputSync 实机截图演示：本机切换，远端输入](docs/assets/inputsync-demo.gif)
 
 ## 开始使用
 

@@ -4,7 +4,7 @@
 
 Macのメニューバー用ツール。画面共有で接続先の入力ソースを手元のMacに同期します。**インストールは手元のMacだけ**。接続先の設定は不要です。
 
-![InputSync の動作イメージ（仮想画面、実機録画ではありません）](assets/inputsync-demo.gif)
+![InputSync 実機スクリーンショット：手元で切り替え、リモートで入力](assets/inputsync-demo.gif)
 
 ## 使い方
 

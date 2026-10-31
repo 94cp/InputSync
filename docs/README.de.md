@@ -4,7 +4,7 @@
 
 Eine Mac-Menüleisten-App, die bei der Bildschirmfreigabe die entfernte Eingabequelle mit dem lokalen Mac synchronisiert. **Nur lokal installieren**; keine Einrichtung am entfernten Mac nötig.
 
-![InputSync-Demo – simulierte Oberfläche, keine Bildschirmaufnahme](assets/inputsync-demo.gif)
+![InputSync mit echten Screenshots: lokal wechseln, remote tippen](assets/inputsync-demo.gif)
 
 ## Einstieg
 

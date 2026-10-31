@@ -4,7 +4,7 @@
 
 Un utilitaire de barre des menus pour Mac qui synchronise la source de saisie distante avec le Mac local via Partage d’écran. **Installation locale uniquement**, sans configuration à distance.
 
-![Démonstration InputSync — interface simulée, pas une capture vidéo](assets/inputsync-demo.gif)
+![InputSync en captures réelles : changer localement, saisir à distance](assets/inputsync-demo.gif)
 
 ## Démarrage
 

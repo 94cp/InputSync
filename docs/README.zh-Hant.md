@@ -4,7 +4,7 @@
 
 一款 Mac 選單列工具，讓「螢幕共享」中的遠端輸入法跟隨本機。**僅需本機安裝**，遠端無需設定。
 
-![InputSync 效果示範：虛擬介面，非實機錄影](assets/inputsync-demo.gif)
+![InputSync 實機截圖示範：本機切換，遠端輸入](assets/inputsync-demo.gif)
 
 ## 開始使用
 

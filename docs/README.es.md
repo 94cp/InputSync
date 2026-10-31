@@ -4,7 +4,7 @@
 
 Una app de barra de menús para Mac que sincroniza la fuente de entrada remota con la local mediante Compartir Pantalla. **Solo se instala en el Mac local**, sin configurar el remoto.
 
-![Demostración de InputSync: interfaz simulada, no una grabación real](assets/inputsync-demo.gif)
+![InputSync con capturas reales: cambia localmente y escribe en remoto](assets/inputsync-demo.gif)
 
 ## Primeros pasos
 
