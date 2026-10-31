@@ -11,7 +11,7 @@ Eine Mac-Menüleisten-App, die bei der Bildschirmfreigabe die entfernte Eingabeq
 1. Die neueste `.dmg` aus den [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) dieses Projekts herunterladen und öffnen. **InputSync** nach **Applications (Programme)** ziehen und anschließend von dort starten. Xcode und eigenes Kompilieren sind nicht nötig.
 2. Über den Berechtigungseintrag der App den Zugriff erlauben. Je nach macOS heißt die Kategorie Bedienungshilfen oder sinngemäß Gerätesteuerung und Datenzugriff.
 3. Mit Apples Bildschirmfreigabe zum entfernten Mac verbinden.
-4. Die Synchronisierung der Tastatursprache in InputSync aktivieren. Dies geht auch im Menü „Bearbeiten“ der lokalen Bildschirmfreigabe.
+4. Mit dem entfernten Mac verbinden und „Einstellungen → Tastatursprache synchronisieren“ wählen. Alternativ im Menü „Bearbeiten“ der lokalen Bildschirmfreigabe aktivieren.
 5. Die Synchronisierung in InputSync aktivieren, die lokale Eingabequelle wechseln und vor der Eingabe etwa eine Sekunde warten.
 
 Die App startet immer pausiert, auch bei der Anmeldung. Während der Synchronisierung kann kurz ein Menü auf dem entfernten Mac erscheinen.
@@ -31,7 +31,7 @@ Fehlt die Schaltfläche, die App erneut öffnen und zu den Einstellungen zurück
 
 ## Updates
 
-Im Menü **Nach Updates suchen…** wählen. Automatische Prüfungen lassen sich unter **Mehr** umschalten. Nach Bestätigung wird das Update heruntergeladen, installiert und die App neu gestartet. Version 0.7.0 muss einmal manuell aktualisiert werden.
+Im Menü **Hilfe → Nach Updates suchen…** wählen. Automatische Prüfungen lassen sich unter **Einstellungen** umschalten. Nach Bestätigung wird das Update heruntergeladen, installiert und die App neu gestartet. Version 0.7.0 muss einmal manuell aktualisiert werden.
 
 ## Funktionsweise
 
@@ -47,7 +47,7 @@ Fenster lassen sich verschieben und skalieren. Änderungen während einer ausste
 
 ## Symbol und Sprache
 
-Unter „Mehr“ das Menüleistensymbol wählen. „Automatisch“ nutzt erkennbare Tastaturlayouts, sonst die Systemregion:
+Unter „Einstellungen“ das Menüleistensymbol wählen. „Automatisch“ nutzt erkennbare Tastaturlayouts, sonst die Systemregion:
 
 - Festlandchina, Taiwan, Hongkong, Macau: **中/英**
 - Japan: **英数 / かな**
@@ -60,9 +60,9 @@ Die App folgt der in macOS unter Sprache & Region festgelegten App-Sprache. Acht
 
 ## Hilfe
 
-- **Zugriff erlaubt, aber nicht verfügbar:** Berechtigung dieser App aus- und einschalten, dann die App neu starten. Nach Updates kann eine erneute Freigabe nötig sein.
+- **Zugriff erlaubt, aber nicht verfügbar:** App aus der Berechtigungsliste entfernen, InputSync aus „Programme“ erneut hinzufügen, Zugriff erlauben und neu starten. Nach Updates kann eine erneute Freigabe nötig sein.
 - **Keine Synchronisierung:** Optionen in beiden Apps prüfen, das entfernte Fenster aktiv halten oder die Verzögerung erhöhen.
-- **Protokoll:** Über „Mehr“ öffnen.
+- **Protokoll:** Über „Hilfe“ öffnen.
 
 Mit ABC und systemeigenem vereinfachtem Pinyin unter macOS 27.2 geprüft. Andere Eingabemethoden und ältere Systeme sind nicht vollständig getestet. Für Apples Bildschirmfreigabe; kein bestimmtes Mac-Modell oder feste Fenstergröße erforderlich.
 
@@ -76,7 +76,7 @@ Wenn InputSync dir hilft, spendier mir gerne einen Kaffee. Auch ein Star auf Git
 
 | WeChat Pay | Alipay |
 | :---: | :---: |
-| <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
+| [<img src="assets/donate/wechat.jpg" alt="WeChat Pay" width="240">](assets/donate/wechat.jpg) | [<img src="assets/donate/alipay.png" alt="Alipay" width="240">](assets/donate/alipay.png) |
 
 [Entwicklung](DEVELOPMENT.md)
 

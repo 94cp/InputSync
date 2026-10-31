@@ -8,14 +8,7 @@ final class MenuHeader: NSView {
     let titleLabel = NSTextField(labelWithString: AppIdentity.name)
     override init(frame: NSRect) {
         super.init(frame: frame)
-        let device = NSTextField(labelWithString: L("sharing.name"))
-        titleLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        device.font = .systemFont(ofSize: 11)
-        device.textColor = .secondaryLabelColor
-        let heading = NSStackView(views: [titleLabel, device])
-        heading.orientation = .vertical
-        heading.alignment = .leading
-        heading.spacing = 3
+        titleLabel.font = .systemFont(ofSize: 13, weight: .semibold)
         stateLabel.font = .systemFont(ofSize: 13, weight: .medium)
         stateIcon.contentTintColor = .secondaryLabelColor
         stateIcon.setAccessibilityElement(false)
@@ -29,17 +22,17 @@ final class MenuHeader: NSView {
         detailLabel.textColor = .secondaryLabelColor
         detailLabel.maximumNumberOfLines = 0
         stateLabel.maximumNumberOfLines = 0
-        let stack = NSStackView(views: [heading, state, detailLabel])
+        let stack = NSStackView(views: [titleLabel, state, detailLabel])
         stack.orientation = .vertical
         stack.alignment = .leading
-        stack.spacing = 10
+        stack.spacing = 6
         stack.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stack)
         NSLayoutConstraint.activate([
             stack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 18),
             stack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -18),
-            stack.topAnchor.constraint(equalTo: topAnchor, constant: 14),
-            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -14),
+            stack.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             state.widthAnchor.constraint(equalTo: stack.widthAnchor),
             detailLabel.widthAnchor.constraint(equalTo: stack.widthAnchor)
         ])
@@ -51,9 +44,10 @@ final class MenuHeader: NSView {
         let symbol = enabled ? "arrow.triangle.2.circlepath" : !permission.ready ? "lock" : "pause.circle"
         stateIcon.image = NSImage(systemSymbolName: symbol, accessibilityDescription: nil)
         detailLabel.stringValue = permission.ready ? detail : permission.detail
+        detailLabel.isHidden = permission.ready && detail == L("state.intro")
         // NSMenu custom views need an explicit final size; use content fitting height.
-        frame.size.width = 320
+        frame.size.width = 270
         layoutSubtreeIfNeeded()
-        frame.size.height = max(122, fittingSize.height)
+        frame.size.height = max(60, fittingSize.height)
     }
 }

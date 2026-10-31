@@ -1,7 +1,4 @@
 import AppKit
-import ApplicationServices
-import Carbon
-import ServiceManagement
 
 extension AppDelegate {
     @objc func help() {
@@ -13,10 +10,11 @@ extension AppDelegate {
         ])
     }
     @objc func about() {
-        showInformation(L("menu.about", AppIdentity.name), sections: [
+        showInformation(L("menu.about"), sections: [
             (L("about.purpose.heading"), L("about.purpose.body")),
             (L("about.window.heading"), L("about.window.body")),
-            (L("about.behavior.heading"), L("about.behavior.body"))
+            (L("about.behavior.heading"), L("about.behavior.body")),
+            (L("menu.github"), "https://github.com/94cp")
         ])
     }
 }

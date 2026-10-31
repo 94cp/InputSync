@@ -11,7 +11,7 @@ Un utilitaire de barre des menus pour Mac qui synchronise la source de saisie di
 1. Téléchargez le dernier fichier `.dmg` depuis les [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) du projet. Ouvrez-le, glissez **InputSync** dans **Applications**, puis lancez l’app depuis ce dossier. Xcode et la compilation ne sont pas nécessaires.
 2. Autorisez l’accès depuis l’entrée des permissions de l’app. Selon macOS, la rubrique correspond à Accessibilité ou au contrôle de l’appareil et à l’accès aux données.
 3. Connectez-vous au Mac distant avec Partage d’écran d’Apple.
-4. Activez la synchronisation de la langue du clavier dans InputSync, ou dans le menu Édition de Partage d’écran sur le Mac local.
+4. Connectez-vous au Mac distant, puis choisissez « Réglages → Synchronisation de la langue du clavier ». Cette option est aussi accessible dans le menu Édition de Partage d’écran sur le Mac local.
 5. Activez la synchronisation dans InputSync. Changez de source de saisie locale, puis attendez environ une seconde avant de saisir à distance.
 
 L’app démarre toujours en pause, même à la connexion. Un menu distant peut apparaître brièvement pendant la synchronisation.
@@ -31,7 +31,7 @@ Si le bouton manque, essayez à nouveau d’ouvrir l’app, puis revenez aux ré
 
 ## Mises à jour
 
-Choisissez **Rechercher des mises à jour…** dans le menu. La recherche automatique se règle sous **Plus**. Après confirmation, la mise à jour est téléchargée et installée, puis l’app redémarre. La version 0.7.0 nécessite une première mise à jour manuelle.
+Choisissez **Aide → Rechercher des mises à jour…** dans le menu. La recherche automatique se règle sous **Réglages**. Après confirmation, la mise à jour est téléchargée et installée, puis l’app redémarre. La version 0.7.0 nécessite une première mise à jour manuelle.
 
 ## Fonctionnement
 
@@ -47,7 +47,7 @@ Vous pouvez déplacer ou redimensionner la fenêtre. Si elle change pendant une 
 
 ## Symbole et langue
 
-Dans « Plus », choisissez le symbole de la barre des menus. Le mode automatique utilise la disposition reconnue du clavier, puis la région du système :
+Dans « Réglages », choisissez le symbole de la barre des menus. Le mode automatique utilise la disposition reconnue du clavier, puis la région du système :
 
 - Chine continentale, Taïwan, Hong Kong, Macao : **中/英**
 - Japon : **英数 / かな**
@@ -60,9 +60,9 @@ L’interface suit la langue de l’app définie dans Langue et région de macOS
 
 ## Dépannage
 
-- **Accès autorisé mais indisponible :** désactivez puis réactivez l’autorisation de cette app, puis relancez-la. Une nouvelle autorisation peut être nécessaire après une mise à jour.
+- **Accès autorisé mais indisponible :** retirez l’app de la liste des autorisations, ajoutez à nouveau InputSync depuis Applications, autorisez l’accès et relancez-la. Une mise à jour peut nécessiter une nouvelle autorisation.
 - **Pas de synchronisation :** vérifiez les options des deux apps, gardez la fenêtre distante active ou augmentez le délai.
-- **Journal :** accessible depuis « Plus ».
+- **Journal :** accessible depuis « Aide ».
 
 Validé avec ABC et le pinyin simplifié intégré à macOS 27.2. Les autres méthodes de saisie et anciennes versions ne sont pas entièrement testées. Conçu pour Partage d’écran d’Apple, sans modèle de Mac ni taille de fenêtre imposés.
 
@@ -76,7 +76,7 @@ Si InputSync vous est utile, vous pouvez m’offrir un café. Une étoile sur Gi
 
 | WeChat Pay | Alipay |
 | :---: | :---: |
-| <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
+| [<img src="assets/donate/wechat.jpg" alt="WeChat Pay" width="240">](assets/donate/wechat.jpg) | [<img src="assets/donate/alipay.png" alt="Alipay" width="240">](assets/donate/alipay.png) |
 
 [Développement](DEVELOPMENT.md)
 

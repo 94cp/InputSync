@@ -1,7 +1,5 @@
 import AppKit
 import ApplicationServices
-import Carbon
-import ServiceManagement
 
 extension AppDelegate {
     // This accesses the LOCAL Screen Sharing menu, never the remote desktop.
@@ -19,11 +17,17 @@ extension AppDelegate {
         }
         return nil
     }
+    func refreshKeyboardSyncState() {
+        let on = permissions.accessibility ? keyboardSyncMenuItem().map(syncMarked) : nil
+        keyboardSyncItem.title = L(on == true ? "setup.menu.enabled" : "setup.menu")
+        keyboardSyncItem.state = on == true ? .on : .off
+    }
     func syncMarked(_ item: AXUIElement) -> Bool {
         !(attribute(item, "AXMenuItemMarkChar") as? String ?? "").isEmpty
     }
     func setupResult(_ text: String) {
         setupMessage = text
+        refreshKeyboardSyncState()
         update()
         log("SETUP " + text)
     }
@@ -60,7 +64,6 @@ extension AppDelegate {
             return
         }
         if syncMarked(option) {
-            keyboardSyncItem.state = .on
             setupResult(L("setup.enabled"))
             return
         }
@@ -71,7 +74,6 @@ extension AppDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { [weak self] in
             guard let self else { return }
             let on = self.keyboardSyncMenuItem().map { self.syncMarked($0) } ?? false
-            self.keyboardSyncItem.state = on ? .on : .off
             self.setupResult(on ? L("setup.enabled") : L("setup.confirm"))
         }
     }

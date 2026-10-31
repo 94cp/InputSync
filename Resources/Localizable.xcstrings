@@ -166,102 +166,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allow access in System Settings. If already enabled, turn it off and on again."
+            "value": "Allow this version of the app in System Settings."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "请在系统设置中授权；若已开启，请关闭后重新开启。"
+            "value": "请在系统设置中允许当前版本。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "請在系統設定中授權；若已開啟，請關閉後重新開啟。"
+            "value": "請在系統設定中允許目前版本。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "システム設定で許可してください。許可済みの場合は、一度オフにして再度オンにしてください。"
+            "value": "システム設定で現在のバージョンを許可してください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "시스템 설정에서 허용하세요. 이미 켜져 있다면 껐다가 다시 켜세요."
+            "value": "시스템 설정에서 현재 버전의 앱을 허용하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "In den Systemeinstellungen erlauben. Falls bereits aktiviert, aus- und wieder einschalten."
+            "value": "Erlaube diese App-Version in den Systemeinstellungen."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Autorisez l’accès dans Réglages Système. Si déjà activé, désactivez puis réactivez-le."
+            "value": "Autorisez cette version dans Réglages Système."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Permite el acceso en Ajustes del Sistema. Si ya está activado, desactívalo y actívalo de nuevo."
-          }
-        }
-      }
-    },
-    "sharing.name": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Screen Sharing"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "屏幕共享"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "螢幕共享"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "画面共有"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "화면 공유"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bildschirmfreigabe"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Partage d’écran"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Compartir Pantalla"
+            "value": "Autoriza esta versión en Ajustes del Sistema."
           }
         }
       }
@@ -749,49 +696,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Enable Keyboard Language Sync"
+            "value": "Keyboard Language Sync…"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "开启“同步键盘语言”"
+            "value": "同步键盘语言…"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "開啟「同步鍵盤語言」"
+            "value": "同步鍵盤語言…"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "キーボードの言語を同期"
+            "value": "キーボード言語の同期…"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "키보드 언어 동기화 켜기"
+            "value": "키보드 언어 동기화…"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tastatursprache synchronisieren"
+            "value": "Tastatursprache synchronisieren…"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Activer la synchro du clavier"
+            "value": "Synchronisation de la langue du clavier…"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Activar sincronización del teclado"
+            "value": "Sincronización del idioma del teclado…"
           }
         }
       }
@@ -855,49 +802,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "About %@"
+            "value": "About"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "关于%@"
+            "value": "关于"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "關於%@"
+            "value": "關於"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ について"
+            "value": "このアプリについて"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ 정보"
+            "value": "정보"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Über %@"
+            "value": "Über"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "À propos de %@"
+            "value": "À propos"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Acerca de %@"
+            "value": "Acerca de"
           }
         }
       }
@@ -955,108 +902,55 @@
         }
       }
     },
-    "menu.more": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "More"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "更多"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "更多"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "その他"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "더 보기"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mehr"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plus"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Más"
-          }
-        }
-      }
-    },
     "menu.quit": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quit %@"
+            "value": "Quit"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "退出%@"
+            "value": "退出"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "結束%@"
+            "value": "結束"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ を終了"
+            "value": "終了"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ 종료"
+            "value": "종료"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ beenden"
+            "value": "Beenden"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Quitter %@"
+            "value": "Quitter"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Salir de %@"
+            "value": "Salir"
           }
         }
       }
@@ -1703,49 +1597,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "In System Settings → Privacy & Security → Accessibility, add and allow %@."
+            "value": "In System Settings → Privacy & Security, allow %@ to control this Mac. If its switch is already on, remove the old entry and add the current app from Applications."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在系统设置 → 隐私与安全性 → 辅助功能中，添加并允许“%@”。"
+            "value": "在系统设置 → 隐私与安全性中，允许“%@”控制此 Mac。若开关已开启，请移除旧条目，再添加“应用程序”中的当前应用。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在系統設定 → 隱私權與安全性 → 輔助使用中，加入並允許「%@」。"
+            "value": "在系統設定 → 隱私權與安全性中，允許「%@」控制此 Mac。若開關已開啟，請移除舊項目，再加入「應用程式」中的目前 App。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "システム設定 → プライバシーとセキュリティ → アクセシビリティで %@ を追加して許可してください。"
+            "value": "システム設定 → プライバシーとセキュリティで、%@によるMacの操作を許可してください。すでにオンの場合は古い項目を削除し、「アプリケーション」から現在のアプリを追加してください。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용에서 %@을(를) 추가하고 허용하세요."
+            "value": "시스템 설정 → 개인정보 보호 및 보안에서 %@의 Mac 제어를 허용하세요. 이미 켜져 있다면 기존 항목을 제거한 뒤 응용 프로그램 폴더의 현재 앱을 추가하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Füge %@ unter Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen hinzu und erlaube den Zugriff."
+            "value": "Erlaube %@ unter Systemeinstellungen → Datenschutz & Sicherheit, diesen Mac zu steuern. Ist der Schalter bereits an, entferne den alten Eintrag und füge die aktuelle App aus „Programme“ hinzu."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dans Réglages Système → Confidentialité et sécurité → Accessibilité, ajoutez et autorisez %@."
+            "value": "Dans Réglages Système → Confidentialité et sécurité, autorisez %@ à contrôler ce Mac. Si l’option est déjà activée, supprimez l’ancienne entrée et ajoutez l’app actuelle depuis Applications."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "En Ajustes del Sistema → Privacidad y seguridad → Accesibilidad, añade y permite %@."
+            "value": "En Ajustes del Sistema → Privacidad y seguridad, permite que %@ controle este Mac. Si ya está activado, elimina la entrada anterior y añade la app actual desde Aplicaciones."
           }
         }
       }
@@ -2551,19 +2445,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Allow %@ in Accessibility, then choose Enable Keyboard Language Sync again."
+            "value": "Allow %@ in Accessibility, then choose Keyboard Language Sync again."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在辅助功能中允许“%@”，然后再次点击本工具的“开启同步键盘语言”。"
+            "value": "在辅助功能中允许“%@”，然后再次点击本工具的“同步键盘语言”。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在輔助使用中允許「%@」，然後再次點選本工具的「開啟同步鍵盤語言」。"
+            "value": "在輔助使用中允許「%@」，然後再次點選本工具的「同步鍵盤語言」。"
           }
         },
         "ja": {
@@ -2763,19 +2657,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Open your remote Mac in Screen Sharing, then choose Enable Keyboard Language Sync again."
+            "value": "Open your remote Mac in Screen Sharing, then choose Keyboard Language Sync again."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在屏幕共享中打开你的远端 Mac，再点一次“开启同步键盘语言”。"
+            "value": "在屏幕共享中打开你的远端 Mac，再点一次“同步键盘语言”。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在螢幕共享中開啟你的遠端 Mac，再點一次「開啟同步鍵盤語言」。"
+            "value": "在螢幕共享中開啟你的遠端 Mac，再點一次「同步鍵盤語言」。"
           }
         },
         "ja": {
@@ -3134,49 +3028,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Connect to the remote Mac, then choose Enable Keyboard Language Sync in this app. You can also enable it in Screen Sharing → Edit."
+            "value": "Connect to the remote Mac, then choose Settings → Keyboard Language Sync. You can also enable it in Screen Sharing’s Edit menu on your local Mac."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "连接远端 Mac，然后点本工具的“开启同步键盘语言”。也可在本机屏幕共享的“编辑”菜单中开启。"
+            "value": "连接远端 Mac，然后点击“设置 → 同步键盘语言”。也可在本机屏幕共享的“编辑”菜单中开启。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "連接遠端 Mac，然後點選本工具的「開啟同步鍵盤語言」。也可在本機螢幕共享的「編輯」選單中開啟。"
+            "value": "連接遠端 Mac，然後點擊「設定 → 同步鍵盤語言」。也可在本機螢幕共享的「編輯」選單中開啟。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "リモート Mac に接続し、このアプリからキーボードの言語の同期を選びます。画面共有の「編集」メニューからも設定できます。"
+            "value": "リモートMacに接続し、「設定 → キーボード言語の同期」を選択します。手元の画面共有の「編集」メニューからも有効にできます。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "원격 Mac에 연결한 후 이 앱에서 키보드 언어 동기화 켜기를 선택하세요. 화면 공유의 ‘편집’ 메뉴에서도 켤 수 있습니다."
+            "value": "원격 Mac에 연결한 뒤 “설정 → 키보드 언어 동기화”를 선택하세요. 로컬 화면 공유의 편집 메뉴에서도 켤 수 있습니다."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verbinde den entfernten Mac und aktiviere die Tastatursynchronisierung in dieser App oder unter Bildschirmfreigabe → Bearbeiten."
+            "value": "Mit dem entfernten Mac verbinden und „Einstellungen → Tastatursprache synchronisieren“ wählen. Alternativ im Menü „Bearbeiten“ der lokalen Bildschirmfreigabe aktivieren."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Connectez le Mac distant, puis activez la synchronisation du clavier dans cette app ou dans Partage d’écran → Édition."
+            "value": "Connectez-vous au Mac distant, puis choisissez « Réglages → Synchronisation de la langue du clavier ». Cette option est aussi accessible dans le menu Édition de Partage d’écran sur le Mac local."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Conecta el Mac remoto y activa la sincronización del teclado en esta app o en Compartir Pantalla → Edición."
+            "value": "Conéctate al Mac remoto y elige «Ajustes → Sincronización del idioma del teclado». También puedes activarlo en el menú Edición de Compartir Pantalla del Mac local."
           }
         }
       }
@@ -3293,49 +3187,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Switch input sources as usual; wait about a second before typing. More → Status Label: Automatic uses keyboard information, then your system region. You can also choose manually."
+            "value": "Switch your input source as usual, wait about a second, then type."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "照常切换输入法，等约 1 秒再输入。“更多 → 状态栏标识”默认按键盘或系统地区选择，也可手动更改。"
+            "value": "照常切换输入法，等约 1 秒再输入。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "照常切換輸入法，等約 1 秒再輸入。「更多 → 狀態列標識」預設依鍵盤或系統地區選擇，也可手動更改。"
+            "value": "照常切換輸入法，等約 1 秒再輸入。"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "入力ソースを切り替え、約1秒待って入力します。「その他」の表示設定はキーボード、次にシステムの地域を参照します。手動変更も可能です。"
+            "value": "いつもどおり入力ソースを切り替え、約1秒待ってから入力します。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "입력 소스를 전환하고 약 1초 후 입력하세요. 더 보기의 표시 설정은 키보드 정보, 다음으로 시스템 지역을 사용합니다. 수동 변경도 가능합니다."
+            "value": "평소처럼 입력 소스를 전환하고 약 1초 후 입력하세요."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Eingabequelle wechseln, etwa eine Sekunde warten. Unter Mehr richtet sich die automatische Anzeige nach Tastatur oder Systemregion. Manuelle Auswahl ist möglich."
+            "value": "Wie gewohnt die Eingabequelle wechseln, etwa eine Sekunde warten und dann tippen."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Changez de source de saisie, puis attendez une seconde. Dans Plus, le symbole automatique dépend du clavier, puis de la région du système. Vous pouvez aussi le choisir."
+            "value": "Changez de source de saisie comme d’habitude, attendez environ une seconde, puis tapez."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cambia la fuente de entrada y espera un segundo. En Más, el símbolo automático usa el teclado o la región del sistema. También puedes elegirlo manualmente."
+            "value": "Cambia la fuente de entrada como de costumbre, espera un segundo y escribe."
           }
         }
       }
@@ -4025,6 +3919,218 @@
           "stringUnit": {
             "state": "translated",
             "value": "Buscar actualizaciones automáticamente"
+          }
+        }
+      }
+    },
+    "setup.menu.enabled": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard Language Sync Is On"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已同步键盘语言"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已同步鍵盤語言"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キーボード言語の同期はオン"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키보드 언어 동기화 켜짐"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tastatursynchronisierung aktiv"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Synchronisation du clavier activée"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sincronización del teclado activada"
+          }
+        }
+      }
+    },
+    "menu.github": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub Profile"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 主页"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 個人頁面"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub プロフィール"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub 프로필"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GitHub-Profil"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil GitHub"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfil de GitHub"
+          }
+        }
+      }
+    },
+    "menu.settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstellungen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
+          }
+        }
+      }
+    },
+    "menu.support": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "帮助"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輔助說明"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルプ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도움말"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilfe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aide"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda"
           }
         }
       }

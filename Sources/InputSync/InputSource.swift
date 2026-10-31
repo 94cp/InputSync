@@ -1,7 +1,6 @@
 import AppKit
 import ApplicationServices
 import Carbon
-import ServiceManagement
 
 func attribute(_ element: AXUIElement, _ name: String) -> CFTypeRef? {
     var value: CFTypeRef?
@@ -60,7 +59,6 @@ func idle() -> Bool {
 }
 func post(_ event: CGEvent) {
     event.flags = []
-    event.setIntegerValueField(.eventSourceUserData, value: 0x494D4557414B45)
     event.post(tap: .cghidEventTap)
 }
 

@@ -1,7 +1,4 @@
 import AppKit
-import ApplicationServices
-import Carbon
-import ServiceManagement
 
 extension AppDelegate {
     func showInformation(_ title: String, sections: [(String, String)]) {
@@ -26,7 +23,11 @@ extension AppDelegate {
             paragraph.lineSpacing = 4
             paragraph.paragraphSpacing = 16
             body.append(NSAttributedString(string: heading + "\n", attributes: [.font: NSFont.systemFont(ofSize: 14, weight: .semibold), .foregroundColor: NSColor.labelColor]))
+            let contentStart = body.length
             body.append(NSAttributedString(string: content + "\n", attributes: [.font: NSFont.systemFont(ofSize: 13), .foregroundColor: NSColor.labelColor, .paragraphStyle: paragraph]))
+            if content.hasPrefix("https://"), let url = URL(string: content) {
+                body.addAttribute(.link, value: url, range: NSRange(location: contentStart, length: (content as NSString).length))
+            }
         }
         text.textStorage?.setAttributedString(body)
         scroll.documentView = text

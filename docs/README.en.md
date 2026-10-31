@@ -11,7 +11,7 @@ A Mac menu bar app that syncs the remote input source with your local Mac in Scr
 1. Download the latest `.dmg` from this project’s [GitHub Releases](https://github.com/94cp/InputSync/releases/latest). Open it, drag **InputSync** into **Applications**, then open the app from Applications. No Xcode or compilation is needed.
 2. Grant the app access through its permission-settings action. Depending on macOS, the permission is called **Accessibility** or **Device Control and Data Access**.
 3. Connect to the remote Mac using Apple Screen Sharing.
-4. In InputSync, enable keyboard language sync. You can also enable it in Screen Sharing’s **Edit → Sync Keyboard Language** menu on the local Mac.
+4. Connect to the remote Mac, then choose Settings → Keyboard Language Sync. You can also enable it in Screen Sharing’s Edit menu on your local Mac.
 5. Enable sync in InputSync. Switch your local input source as usual, wait about a second, then type remotely.
 
 Each launch starts paused, including launches at login. A remote menu may briefly appear during synchronization.
@@ -31,7 +31,7 @@ If **Open Anyway** is missing, try opening the app again, then return to Setting
 
 ## Updates
 
-Choose **Check for Updates…** from the menu. Toggle automatic checks under **More**. Confirm an update to download, install and restart. Version 0.7.0 needs one manual upgrade.
+Choose **Help → Check for Updates…** from the menu. Toggle automatic checks under **Settings**. Confirm an update to download, install and restart. Version 0.7.0 needs one manual upgrade.
 
 ## How it works
 
@@ -47,7 +47,7 @@ Resizing or moving the window is supported. If it changes during a pending refre
 
 ## Menu bar symbol and language
 
-Under **More**, choose the menu bar symbol. **Automatic** uses recognizable keyboard layout information, then the macOS region:
+Under **Settings**, choose the menu bar symbol. **Automatic** uses recognizable keyboard layout information, then the macOS region:
 
 - China mainland, Taiwan, Hong Kong, Macao: **中/英**
 - Japan: **英数 / かな**
@@ -60,9 +60,9 @@ The interface follows the app language configured in macOS Language & Region set
 
 ## Troubleshooting
 
-- **Permission is enabled but unavailable:** toggle this app’s permission off and on, then restart it. Updates may require authorization again.
+- **Permission is enabled but unavailable:** remove the app from the system permission list, add InputSync from Applications again, enable access and restart it. Updates may require authorization again.
 - **No synchronization:** enable sync in both apps, keep the remote window active, and try a longer delay from the menu.
-- **Logs:** open them from the More menu.
+- **Logs:** open them from the Help menu.
 
 The workaround has been verified with ABC and system Simplified Pinyin on macOS 27.2. Other input methods and older macOS versions have not been fully tested. It targets Apple Screen Sharing, without a fixed Mac model or window size requirement.
 
@@ -76,7 +76,7 @@ If InputSync helps you, buy me a coffee. A Star on GitHub is also appreciated!
 
 | WeChat Pay | Alipay |
 | :---: | :---: |
-| <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
+| [<img src="assets/donate/wechat.jpg" alt="WeChat Pay" width="240">](assets/donate/wechat.jpg) | [<img src="assets/donate/alipay.png" alt="Alipay" width="240">](assets/donate/alipay.png) |
 
 [Development](DEVELOPMENT.md)
 

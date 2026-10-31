@@ -85,7 +85,19 @@ extension AppDelegate {
         }
         let choice = selectedStatusLabel == .automatic ? (automaticStatusLabel ?? .globe) : selectedStatusLabel
         item.button?.title = choice.imageName == nil ? choice.title : ""
-        item.button?.image = choice.imageName.flatMap { symbol($0) }
-        item.button?.imagePosition = choice.imageName == nil ? .noImage : .imageOnly
+        let stateImage = symbol(enabled ? "arrow.triangle.2.circlepath" : "pause.circle")
+        if let keyImage = choice.imageName.flatMap({ symbol($0) }) {
+            let image = NSImage(size: NSSize(width: 34, height: 16), flipped: false) { _ in
+                stateImage?.draw(in: NSRect(x: 0, y: 1, width: 14, height: 14))
+                keyImage.draw(in: NSRect(x: 19, y: 1, width: 15, height: 14))
+                return true
+            }
+            image.isTemplate = true
+            item.button?.image = image
+            item.button?.imagePosition = .imageOnly
+        } else {
+            item.button?.image = stateImage
+            item.button?.imagePosition = .imageLeading
+        }
     }
 }

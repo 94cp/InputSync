@@ -1,7 +1,4 @@
-import AppKit
 import ApplicationServices
-import Carbon
-import ServiceManagement
 
 struct PermissionSnapshot: Equatable {
     let accessibility: Bool

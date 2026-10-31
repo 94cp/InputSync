@@ -1,6 +1,4 @@
 import AppKit
-import ApplicationServices
-import Carbon
 import ServiceManagement
 
 extension AppDelegate {

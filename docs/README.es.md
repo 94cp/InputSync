@@ -11,7 +11,7 @@ Una app de barra de menús para Mac que sincroniza la fuente de entrada remota c
 1. Descarga el archivo `.dmg` más reciente de [GitHub Releases](https://github.com/94cp/InputSync/releases/latest) del proyecto. Ábrelo, arrastra **InputSync** a **Applications (Aplicaciones)** y abre la app desde esa carpeta. No necesitas Xcode ni compilar el proyecto.
 2. Permite el acceso desde la opción de permisos de la app. Según macOS, la categoría corresponde a Accesibilidad o al control del dispositivo y acceso a los datos.
 3. Conecta con el Mac remoto mediante Compartir Pantalla de Apple.
-4. Activa la sincronización del idioma del teclado en InputSync. También puedes hacerlo en el menú Edición de Compartir Pantalla en el Mac local.
+4. Conéctate al Mac remoto y elige «Ajustes → Sincronización del idioma del teclado». También puedes activarlo en el menú Edición de Compartir Pantalla del Mac local.
 5. Activa la sincronización en InputSync. Cambia la fuente de entrada local y espera aproximadamente un segundo antes de escribir en el Mac remoto.
 
 La app siempre se abre en pausa, incluso al iniciar sesión. Durante la sincronización puede aparecer brevemente un menú remoto.
@@ -31,7 +31,7 @@ Si falta el botón, intenta abrir la app otra vez y vuelve a Ajustes. Al iniciar
 
 ## Actualizaciones
 
-Elige **Buscar actualizaciones…** en el menú. Activa o desactiva la búsqueda automática en **Más**. Al confirmar, se descarga e instala la actualización y se reinicia la app. La versión 0.7.0 requiere una primera actualización manual.
+Elige **Ayuda → Buscar actualizaciones…** en el menú. Activa o desactiva la búsqueda automática en **Ajustes**. Al confirmar, se descarga e instala la actualización y se reinicia la app. La versión 0.7.0 requiere una primera actualización manual.
 
 ## Cómo funciona
 
@@ -47,7 +47,7 @@ Puedes mover o redimensionar la ventana. Si cambia durante una actualización pe
 
 ## Símbolo e idioma
 
-En « Más », elige el símbolo de la barra de menús. El modo automático usa la distribución reconocida del teclado y, si no está disponible, la región del sistema:
+En « Ajustes », elige el símbolo de la barra de menús. El modo automático usa la distribución reconocida del teclado y, si no está disponible, la región del sistema:
 
 - China continental, Taiwán, Hong Kong y Macao: **中/英**
 - Japón: **英数 / かな**
@@ -60,9 +60,9 @@ La interfaz sigue el idioma de la app configurado en Idioma y región de macOS. 
 
 ## Solución de problemas
 
-- **Permiso concedido pero no disponible:** desactiva y vuelve a activar el permiso de esta app y reiníciala. Puede ser necesario volver a conceder permisos tras actualizarse.
+- **Permiso concedido pero no disponible:** elimina la app de la lista de permisos, vuelve a añadir InputSync desde Aplicaciones, concede acceso y reiníciala. Puede ser necesario repetirlo tras una actualización.
 - **No se sincroniza:** revisa las opciones de ambas apps, mantén activa la ventana remota o aumenta el tiempo de espera.
-- **Registro:** ábrelo desde « Más ».
+- **Registro:** ábrelo desde « Ayuda ».
 
 Verificado con ABC y el pinyin simplificado del sistema en macOS 27.2. No se han probado por completo otros métodos de entrada ni sistemas anteriores. Diseñado para Compartir Pantalla de Apple, sin exigir un modelo de Mac ni un tamaño de ventana fijo.
 
@@ -76,7 +76,7 @@ Si InputSync te resulta útil, puedes invitarme a un café. ¡Una estrella en Gi
 
 | WeChat Pay | Alipay |
 | :---: | :---: |
-| <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
+| [<img src="assets/donate/wechat.jpg" alt="WeChat Pay" width="240">](assets/donate/wechat.jpg) | [<img src="assets/donate/alipay.png" alt="Alipay" width="240">](assets/donate/alipay.png) |
 
 [Desarrollo](DEVELOPMENT.md)
 

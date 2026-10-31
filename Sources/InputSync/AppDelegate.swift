@@ -38,6 +38,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(heading)
         menu.addItem(.separator())
         toggleItem = add(L("menu.enable"), #selector(toggle), to: menu)
+        let details = NSMenu()
+        details.delegate = self
         let delays = NSMenu()
         for (name, tag) in [(L("delay.default", L10n.number(0.5)), 500), (L("delay.seconds", L10n.number(1)), 1000), (L("delay.seconds", L10n.number(2.2)), 2200)] {
             let option = add(name, #selector(changeDelay(_:)), to: delays)
@@ -47,28 +49,29 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         delayItem = NSMenuItem(title: L("delay.menu", L10n.number(0.5)), action: nil, keyEquivalent: "")
         delayItem.image = symbol("clock")
         delayItem.submenu = delays
-        menu.addItem(delayItem)
-        launchAtLoginItem = add(L("login.menu"), #selector(toggleLaunchAtLogin), to: menu)
+        details.addItem(delayItem)
+        launchAtLoginItem = add(L("login.menu"), #selector(toggleLaunchAtLogin), to: details)
         launchAtLoginItem.image = symbol("sunrise")
-        menu.addItem(.separator())
-        keyboardSyncItem = add(L("setup.menu"), #selector(enableKeyboardSync), to: menu)
-        keyboardSyncItem.image = symbol("keyboard")
-        add(L("menu.help"), #selector(help), to: menu).image = symbol("questionmark.circle")
-        let checkUpdates = add(L("update.check"), #selector(SPUStandardUpdaterController.checkForUpdates(_:)), to: menu)
-        checkUpdates.target = updaterController
-        checkUpdates.image = symbol("arrow.down.circle")
-        let details = NSMenu()
-        automaticUpdatesItem = add(L("update.automatic"), #selector(toggleAutomaticUpdates), to: details)
         addStatusLabelMenu(to: details)
         details.addItem(.separator())
-        add(L("menu.about", AppIdentity.name), #selector(about), to: details)
-        add(L("menu.logs"), #selector(showLog), to: details)
-        let more = NSMenuItem(title: L("menu.more"), action: nil, keyEquivalent: "")
-        more.image = symbol("stethoscope")
-        more.submenu = details
-        menu.addItem(more)
+        keyboardSyncItem = add(L("setup.menu"), #selector(enableKeyboardSync), to: details)
+        keyboardSyncItem.image = symbol("keyboard")
+        automaticUpdatesItem = add(L("update.automatic"), #selector(toggleAutomaticUpdates), to: details)
+        let settings = NSMenuItem(title: L("menu.settings"), action: nil, keyEquivalent: "")
+        settings.submenu = details
+        menu.addItem(settings)
+        let helpMenu = NSMenu()
+        add(L("menu.help"), #selector(help), to: helpMenu)
+        let checkUpdates = add(L("update.check"), #selector(SPUStandardUpdaterController.checkForUpdates(_:)), to: helpMenu)
+        checkUpdates.target = updaterController
+        helpMenu.addItem(.separator())
+        add(L("menu.logs"), #selector(showLog), to: helpMenu)
+        add(L("menu.about"), #selector(about), to: helpMenu)
+        let helpEntry = NSMenuItem(title: L("menu.support"), action: nil, keyEquivalent: "")
+        helpEntry.submenu = helpMenu
+        menu.addItem(helpEntry)
         menu.addItem(.separator())
-        add(L("menu.quit", AppIdentity.name), #selector(quit), to: menu).image = symbol("power")
+        add(L("menu.quit"), #selector(quit), to: menu).image = symbol("power")
         item.menu = menu
         updaterController.startUpdater()
         refreshPermissions()
@@ -81,7 +84,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             guard let self else { return }
             let previous = self.permissions
             self.refreshPermissions()
-            if previous != self.permissions { self.update() }
+            if previous != self.permissions {
+                self.refreshKeyboardSyncState()
+                self.update()
+            }
         }
         RunLoop.main.add(timer, forMode: .common)
         observers.append(DistributedNotificationCenter.default().addObserver(forName: NSNotification.Name(kTISNotifySelectedKeyboardInputSourceChanged as String), object: nil, queue: .main) { [weak self] _ in self?.changed() })
@@ -120,7 +126,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func menuNeedsUpdate(_ menu: NSMenu) {
         automaticUpdatesItem.state = updaterController.updater.automaticallyChecksForUpdates ? .on : .off
         refreshPermissions()
-        keyboardSyncItem.state = keyboardSyncMenuItem().map { syncMarked($0) ? .on : .off } ?? .off
+        refreshKeyboardSyncState()
         updateLoginItem()
         update(refreshAutomaticLabel: true)
     }
@@ -153,6 +159,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         generation += 1
         if enabled { enabled = false; report(L("state.paused")); return }
         refreshPermissions()
+        if permissions.accessibility && !permissions.eventPosting {
+            _ = CGRequestPostEventAccess()
+            refreshPermissions()
+        }
         guard permissions.ready else {
             // Ask macOS for this running build, not an older entry with the same name.
             if !permissions.accessibility {

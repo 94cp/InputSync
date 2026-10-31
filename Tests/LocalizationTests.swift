@@ -15,7 +15,7 @@ final class LocalizationTests: XCTestCase {
             for (key,value) in values { XCTAssertFalse(value.isEmpty, "\(language):\(key)"); XCTAssertNotEqual(key,value) }
             let name = AppIdentity.localizedName(in: bundle)
             XCTAssertFalse(name.isEmpty)
-            XCTAssertFalse(L10n.text("menu.quit", arguments: [name], bundle: bundle).contains("%@"))
+            XCTAssertFalse(L10n.text("menu.quit", bundle: bundle).contains("%@"))
         }
     }
     func testNamesFollowLanguage() throws {
