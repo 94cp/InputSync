@@ -75,3 +75,7 @@ Si InputSync te resulta útil, puedes invitarme a un café. ¡Una estrella en Gi
 | <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
 
 [Desarrollo](DEVELOPMENT.md)
+
+## Licencia
+
+Distribuido bajo la [licencia MIT](../LICENSE).

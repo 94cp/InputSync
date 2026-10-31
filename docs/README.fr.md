@@ -75,3 +75,7 @@ Si InputSync vous est utile, vous pouvez m’offrir un café. Une étoile sur Gi
 | <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
 
 [Développement](DEVELOPMENT.md)
+
+## Licence
+
+Distribué sous [licence MIT](../LICENSE).

@@ -75,3 +75,7 @@
 | <img src="docs/assets/donate/wechat.png" alt="微信支付" width="180"> | <img src="docs/assets/donate/alipay.png" alt="支付宝" width="180"> |
 
 [开发说明](docs/DEVELOPMENT.md)
+
+## License
+
+本项目采用 [MIT 许可证](LICENSE)。

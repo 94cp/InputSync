@@ -75,3 +75,7 @@ Wenn InputSync dir hilft, spendier mir gerne einen Kaffee. Auch ein Star auf Git
 | <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
 
 [Entwicklung](DEVELOPMENT.md)
+
+## Lizenz
+
+Lizenziert unter der [MIT-Lizenz](../LICENSE).

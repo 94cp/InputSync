@@ -75,3 +75,7 @@ InputSync が役に立ったら、コーヒーを一杯おごっていただけ�
 | <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
 
 [開発者向け情報](DEVELOPMENT.md)
+
+## ライセンス
+
+[MIT ライセンス](../LICENSE)で公開しています。

@@ -75,3 +75,7 @@ InputSync가 도움이 되었다면 커피 한 잔 사 주세요. GitHub에서 S
 | <img src="assets/donate/wechat.png" alt="WeChat Pay" width="180"> | <img src="assets/donate/alipay.png" alt="Alipay" width="180"> |
 
 [개발 안내](DEVELOPMENT.md)
+
+## 라이선스
+
+[MIT 라이선스](../LICENSE)를 따릅니다.
